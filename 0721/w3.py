@@ -1,8 +1,8 @@
 
-def dict_list_sum(students):
+def dict_list_sum(lst):
     a=0
-    for student in students:
-        a=a+student['age']
+    for ls in lst:
+        a=a+ls['age']
     print(a)
     return(a)
 
