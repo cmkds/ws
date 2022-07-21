@@ -36,3 +36,12 @@ middle = int(len(numbers)/2)
 print(numbers)
 print(middle)
 print(numbers[middle])
+
+#2
+numbers = [1,2,3,4,5]
+numbers = sorted(numbers)
+l = len(numbers)
+if l%2:
+    print(numbers[len(numbers)%2])
+else:
+    print((numbers[1%2-1] + numbers[1%2+1])/2)
