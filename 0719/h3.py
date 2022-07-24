@@ -3,3 +3,5 @@ a=0
 for i in scores:
     a=a+i
 print(a/len(scores))
+
+print(sum(scores)/len(scores))
