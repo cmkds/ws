@@ -1,19 +1,3 @@
-def duplicated_letters(str):
-    lst=[]
-    for char in str:
-        if str.count(char)>1:
-            if lst.count(char)>0:
-                continue
-            else:
-                lst.append(char)
-    return lst
+1) faker라는 패키지를 설치하는 명령어
+2) CMD 또는 git bash 창에서 실행한다.
 
-print(duplicated_letters('apple'))
-print(duplicated_letters('banana'))
-
-
-##set
-set_lst =set(lst)
-for i in set_lst:
-    if str.count(i)>1:
-        ans.append(i)

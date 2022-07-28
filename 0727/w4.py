@@ -1,51 +1,41 @@
-def lonely(abc):
-    # for idx,num in enumerate(abc):
-    #     checkNum= idx
-    #     while(True):
-    #         if checkNum==len(abc)-1:
-    #             break
-    #         elif num==abc[checkNum+1]:
-    #             del abc[checkNum+1]
-                
-    #         else:
-    #             break
+from faker import Faker
 
-    for idx,num in enumerate(abc):
-        while(True):
-            if idx==len(abc)-1:
-                break
-            elif num==abc[idx+1]:
-                del abc[idx+1]
-                
-            else:
-                break
+fake = Faker()
 
-       
-    return abc
+fake.name()
 
-    
+# class Faker():
+#     def __init__(self,name):
+#         self.name=name
 
+import random
+# print(random.random())
+# print(random.random())
 
+# print(random.seed(7777))
+# print(random.random())
 
-print(lonely([1, 1, 3, 3, 0, 1, 1])) # => [1, 3, 0, 1]
-print(lonely([4, 4, 4, 3, 3])) # => [4, 3]
+# random.seed(8888)
+# random.random()
 
+# fake1= Faker('ko_KR')
+# Faker.seed(87654321)
 
+# print(fake1.name())  #이진호
 
-#######for문 이용하기
-lst=[1,1,3,3,0,1,1]
-temp =lst[0]
-ans = [lst[0]]
-for i in lst[1:]:
-    if temp != i:
-        ans.append(i)
-        temp =i
+# fake2=Faker('ko_KR')
+# print(fake2.name())  #강은주
 
-###########while문 이용하기
-lst=[1,1,3,3,0,1,1]
-idx=1
-while 1: #나중에 바꾸세요
-    if lst[idx] == lst[idx-1]:
-        lst.pop(idx)
-    else:
-        idx += 1
+#1) seed()는 알규먼트 값에 해당하는 값에대한 이름을 찾아.
+#클래스의 name 속성을 변경해주는 메소드
+#seed() 는 클래스 메소드
+
+fake1 = Faker('ko_KR')
+fake1.seed_instance(87654321)
+
+print(fake1.name()) #이진호
+
+fake2=Faker('ko_KR')
+print(fake2.name())  #김은정
+2)
+#seed_instance() 는 인스턴스 메소드
