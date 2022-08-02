@@ -1,0 +1,1 @@
+!important , Inline Style, id 선택자, class 선택자, 요소 선택자, 소스 순서
