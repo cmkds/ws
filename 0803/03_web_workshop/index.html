@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- 1. Nav -->
-  <nav class="d-flex justify-content-between align-items-center bg-dark px-4 py-3">
+  <nav class="sticky-top d-flex justify-content-between align-items-center bg-dark px-4 py-3">
     <a href="#">
       <img src="images/logo.png" alt="Logo Image">
     </a>
@@ -21,34 +21,57 @@
   </nav>
 
   <!-- 2. Header -->
-  <header class="text-white fw-bold text-center fs-1 mx-auto">
-      <div class="mx-auto">Cinema</div>
-      <div class="mx-auto">Community</div>
-      <a href="#">Let's Go</a>
+  <header class="d-flex flex-column justify-content-center text-white fw-bold text-center mx-auto">
+      <div class="mx-auto py-auto fs-1">Cinema</div>
+      <div class="mx-auto fs-1">Community</div>
+      <a href="#"><button type="button" class="btn btn-primary">Let's Go</button></a>
   </header>
 
   <!-- 3. Section -->
-  <section>
+  <section class="d-flex flex-column align-items-center mt-5 mb-4">
     <h2>Used Skills</h2>
-    <article>
-      <div>
-        <img src="images/web.png" alt="Web Image">
-        <p>Web</p>
-      </div>
-      <div>
-        <img src="images/html5.png" alt="HTML5 Image">
-        <p>HTML5</p>
-      </div>
-      <div>
-        <img src="images/css3.png" alt="CSS3 Image">
-        <p>CSS3</p>
+    <article class="container mt-4">
+      <div class="row">
+        <div class="d-flex flex-column align-items-center col">
+          <img src="images/web.png" alt="Web Image">
+          <p>Web</p>
+        </div>
+        <div class="d-flex flex-column align-items-center col">
+          <img src="images/html5.png" alt="HTML5 Image">
+          <p>HTML5</p>
+        </div>
+        <div class="d-flex flex-column align-items-center col">
+          <img src="images/css3.png" alt="CSS3 Image">
+          <p>CSS3</p>
+        </div>
       </div>
     </article>
-  </section>
+  </section> 
+  <!-- 
+  <section class="d-flex flex-column align-items-center mt-5 mb-4">
+    <h2>Used Skills</h2>
+  <article class="">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column align-items-center mx-5">
+          <img src="images/web.png" alt="Web Image">
+          <p>Web</p>
+        </div>
+        <div class="d-flex flex-column align-items-center mx-5">
+          <img src="images/html5.png" alt="HTML5 Image">
+          <p>HTML5</p>
+        </div>
+        <div class="d-flex flex-column align-items-center mx-5">
+          <img src="images/css3.png" alt="CSS3 Image">
+          <p>CSS3</p>
+        </div>
+      </div>
+       </article> 
+  </section> -->
 
   <!-- 4. Footer -->
-  <footer>
-    <p>HTML & CSS project. Created by _____</p>
+  <footer class="fixed-bottom d-flex flex-column bg-primary text-center text-white ">
+    <hr>
+    <p class="my-auto">HTML & CSS project. Created by Dong_Su</p>
   </footer>
 
 
